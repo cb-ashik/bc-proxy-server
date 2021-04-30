@@ -37,7 +37,77 @@ module.exports = {
                 logLevel: 'debug'
 
             },
-            '*': {
+	    '/shopify/settings': {
+                target: 'http://app.localcb.in:9090',
+                changeOrigin: true,
+                // pathRewrite: { '/proxy/bigcommerce/uninstall': '/bigcommerce/uninstall' },
+                logLevel: 'debug'
+
+            },
+            '/shopify/merchantonboarddata': {
+                target: 'http://app.integrations.localcb.in:9090',
+                changeOrigin: true,
+                // pathRewrite: { '/proxy/bigcommerce/uninstall': '/bigcommerce/uninstall' },
+                logLevel: 'debug' 
+                
+            },
+	    '/shopify/configonboarddata': {
+                target: 'http://app.integrations.localcb.in:9090',
+                changeOrigin: true,
+                // pathRewrite: { '/proxy/bigcommerce/uninstall': '/bigcommerce/uninstall' },
+                logLevel: 'debug' 
+                
+            },
+	    '/shopify/run_initial_sync': {
+                target: 'http://app.integrations.localcb.in:9090',
+                changeOrigin: true,
+                // pathRewrite: { '/proxy/bigcommerce/uninstall': '/bigcommerce/uninstall' },
+                logLevel: 'debug'
+
+            },
+	    '/shopify/skip_intial_sync': {
+                target: 'http://app.integrations.localcb.in:9090',
+                changeOrigin: true,
+                // pathRewrite: { '/proxy/bigcommerce/uninstall': '/bigcommerce/uninstall' },
+                logLevel: 'debug'
+
+            },
+	    '/shopify/toggle_auto_sync': {
+                target: 'http://app.integrations.localcb.in:9090',
+                changeOrigin: true,
+                // pathRewrite: { '/proxy/bigcommerce/uninstall': '/bigcommerce/uninstall' },
+                logLevel: 'debug'
+
+            },
+	    '/shopify/finishinstall': {
+                target: 'http://app.localcb.in:9090',
+                changeOrigin: true,
+                // pathRewrite: { '/proxy/bigcommerce/uninstall': '/bigcommerce/uninstall' },
+                logLevel: 'debug'
+
+            },
+	    '/shopify/dashboard': {
+                target: 'http://app.integrations.localcb.in:9090',
+                changeOrigin: true,
+                // pathRewrite: { '/proxy/bigcommerce/uninstall': '/bigcommerce/uninstall' },
+                logLevel: 'debug'
+
+            },
+	    '/shopify/webhookseg': {
+                target: 'http://mannar-test.localcb.in:9090',
+                changeOrigin: true,
+                // pathRewrite: { '/proxy/bigcommerce/uninstall': '/bigcommerce/uninstall' },
+                logLevel: 'debug'
+
+            },
+	    '/shopify/intial_sync_status': {
+                target: 'http://app.integrations.localcb.in:9090',
+                changeOrigin: true,
+                // pathRewrite: { '/proxy/bigcommerce/uninstall': '/bigcommerce/uninstall' },
+                logLevel: 'debug'
+
+            },
+	    '*': {
                 target: 'http://mannar-test.localcb.in:9090',
                 changeOrigin: true,
                 logLevel: 'debug'
@@ -46,3 +116,4 @@ module.exports = {
         }
     }
 };
+
