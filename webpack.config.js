@@ -37,6 +37,16 @@ module.exports = {
                 logLevel: 'debug'
 
             },
+            '/shopify/webhookseg': {
+                target: 'http://mannar-test.localcb.in:9090',
+                changeOrigin: true,
+                logLevel: 'debug'
+            },
+	    '/shopify/*': {
+                target: 'http://app.localcb.in:9090',
+                changeOrigin: true,
+                logLevel: 'debug'
+            },
             '*': {
                 target: 'http://mannar-test.localcb.in:9090',
                 changeOrigin: true,
@@ -46,3 +56,4 @@ module.exports = {
         }
     }
 };
+
